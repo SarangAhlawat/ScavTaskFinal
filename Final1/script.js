@@ -1,5 +1,5 @@
 
-const correctPasscodes = ["KMLO", "INTV", "ADFS", "UKJB", "TMPO", "HRXZ", "DEGQ", "UTFL", "SKIT", "LIMT"]; 
+const correctPasscodes = ["QXJV", "ZWLP", "GRKC", "HTFM", "VXND", "BYZH", "DJPQ", "MWFK", "CTLS", "KRQX"]; 
 
 function checkPasscode() {
   const userPasscode = document.getElementById("passcode").value;
@@ -7,7 +7,7 @@ function checkPasscode() {
 
   if (correctPasscodes.includes(userPasscode)) {
     resultDiv.innerHTML = "Correct! Redirecting to the next page...";
-    resultDiv.style.color = "darkgreen";
+    resultDiv.style.color = "#90EE90";
     resultDiv.style.fontWeight = "900";
     resultDiv.style.fontSize = "24px";
 
@@ -19,7 +19,7 @@ function checkPasscode() {
     }, 2000);
   } else {
     resultDiv.innerHTML = "Incorrect passcode, try again!";
-    resultDiv.style.color = "darkred";
+    resultDiv.style.color = "#FF9999";
     resultDiv.style.fontWeight = "900";
     resultDiv.style.fontSize = "24px";
   }
